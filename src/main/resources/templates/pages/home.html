@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org/"> <!-- thymeleaf is our
+templating engine -->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+
+</head>
+<body>
+
+<h1> My first View</h1>
+
+<!-- ${#strings.capitalize(monFramework)}     capitalize first case   myURL =  ?monFramework=springboot  -->
+<br><br><br>
+
+	<h2 th:text=" 'Your favorite framework is ' + ${#strings.capitalize(monFramework)} + '!'">Your favorite framework is JAVA !</h2>
+
+</body>
+</html>

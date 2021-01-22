@@ -1,0 +1,7 @@
+
+server.port=8081
+
+welcome.message = "Bienvenue"
+error.message = "parametre invalide"
+
+logging.level.org.springframework.web=DEBUG
